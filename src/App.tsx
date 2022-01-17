@@ -1,9 +1,12 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import Likecom from "./like";
+import Likecom from "./components/like";
+import MouseEvent from "./components/mouseEvent";
+import useMousePosition from "./hooks/useMousePosition";
 
 function App() {
+  const position = useMousePosition()
   return (
     <div className="App">
       <header className="App-header">
@@ -11,7 +14,9 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <p>x{position.x},y:{position.y}</p>
         <Likecom />
+        <MouseEvent/>
         <a
           className="App-link"
           href="https://reactjs.org"
