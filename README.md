@@ -1,3 +1,7 @@
+# React and TypeScript
+
+  希望能在这个项目中能学到更多知识并加以应用 22/1/17
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
